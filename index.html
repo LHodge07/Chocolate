@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indy Chocolate</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        background-color: #3b2418;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+      }
+      .card {
+        flex: 0 0 200px;
+        background-color: #fff6e0;
+        color: #3b2418;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+      }
+      .card img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        background-color: white;
+        display: block;
+        margin: 5px auto;
+      }
+      p.content {
+        display: none;
+        font-size: small;
+      }
+      button {
+        background-color: #5a3826;
+        color: #fff6e0;
+        font-size: larger;
+      }
+      h1 {
+        width: 100%;
+        background-color: #fff6e0;
+        color: #5a3826;
+        text-align: center;
+        font-size: xx-large;
+      }
+      .intro {
+        color: #fff6e0;
+      }
+    </style>
+    <script src="./lib/jquery-4.0.0.js"></script>
+    <script src="chocolates.js"></script>
+  </head>
+  <body>
+    <h1>Circle City Chocolates</h1>
+    <p class="intro">Pick a card to win FREE chocolate!</p>
+    <p>
+      <button type="button" onclick="pickRandomSample()">Pick My Free Sample</button>
+      <button type="button" onclick="toggleContent()">
+        Show Calories &amp; Content
+      </button>
+    </p>
+    <div class="wrapper">
+    </div>
+  </body>
+</html>
